@@ -42,4 +42,12 @@ public class Testing {
     public void testcase10() {
         Assert.assertEquals("Giá vé 95000", Main.caculatePrice(100, "ngày cuối tuần"));
     }
+    @Test
+    public void testcase11() {
+        Assert.assertEquals("Đầu vào không hợp lệ", Main.caculatePrice(101, "ngày cuối tuần"));
+    }
+    @Test
+    public void testcase12() {
+        Assert.assertEquals("Đầu vào không hợp lệ", Main.caculatePrice(-1, "ngày thường"));
+    }
 }
